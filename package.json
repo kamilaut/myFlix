@@ -16,7 +16,8 @@
   },
   "homepage": "https://github.com/kamilaut/myFlix-client#readme",
   "devDependencies": {
-    "@parcel/transformer-sass": "^2.8.0"
+    "@parcel/transformer-sass": "^2.8.0",
+    "process": "^0.11.10"
   },
   "dependencies": {
     "react": "^18.2.0",
