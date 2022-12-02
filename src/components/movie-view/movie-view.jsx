@@ -23,7 +23,7 @@ export class MovieView extends React.Component {
                 </div>
                 <button
                     onClick={() => {
-                        onBackClick(null);
+                        console.log('asd');
                     }}
                 >
                     Back to list
@@ -41,5 +41,5 @@ MovieView.propTypes = {
         Director: PropTypes.object.isRequired,
         ImagePath: PropTypes.string.isRequired
     }).isRequired,
-    onMovieClick: PropTypes.func.isRequired
+    onBackClick: PropTypes.func.isRequired
 };
