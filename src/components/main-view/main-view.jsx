@@ -34,7 +34,7 @@ export class MainView extends React.Component {
 
     setSelectedMovie(newSelectedMovie) {
         this.setState({
-            selectedMovie: movie,
+            selectedMovie: newSelectedMovie,
         });
     }
     /* When a user successfully logs in, 
