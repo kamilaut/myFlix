@@ -12,6 +12,10 @@ export function LoginView(props) {
         /* then call props.onLoggedIn(username) */
         props.onLoggedIn(username);
     };
+    const handleRegisterClick = (e) => {
+        e.preventDefault();
+        props.toRegister();
+    };
 
     return (
         <form>
@@ -29,8 +33,5 @@ export function LoginView(props) {
 }
 
 LoginView.propTypes = {
-    user: PropTypes.shape({
-        username: PropTypes.string.isRequired,
-        password: PropTypes.string.isRequired
-    }),
+    onLoggedIn: PropTypes.func.isRequired
 };
